@@ -15,18 +15,19 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: ListView(
+          scrollDirection: Axis.horizontal,
           children: [
             Container(
               color: Colors.deepPurple,
-              height: 350,
+              width: 350,
             ),
             Container(
               color: Colors.blue,
-              height: 350,
+              width: 350,
             ),
             Container(
               color: Colors.green,
-              height: 350,
+              width: 350,
             ),
           ],
         ),
