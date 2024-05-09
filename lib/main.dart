@@ -16,11 +16,23 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: ListView.builder(
-          itemCount: names.length,
-          itemBuilder: (context, index) => ListTile(
-            title:Text(names[index]),
-          ),
+        body: Stack(
+          alignment: Alignment.center,
+          children: [
+            Container(
+              width: 300,
+              height: 300,
+              color: Colors.deepPurple[300],
+            ),Container(
+              width: 200,
+              height: 200,
+              color: Colors.deepPurple[200],
+            ),Container(
+              width: 100,
+              height: 100,
+              color: Colors.deepPurple[100],
+            ),
+          ],
         ),
       ),
     );
