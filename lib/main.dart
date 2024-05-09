@@ -14,20 +14,19 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Column(
+        body: ListView(
           children: [
-            Expanded(
-              child: Container(
-                color: Colors.deepPurple,
-              ),
-            ),Expanded(
-              child: Container(
-                color: Colors.blue,
-              ),
-            ),Expanded(
-              child: Container(
-                color: Colors.green,
-              ),
+            Container(
+              color: Colors.deepPurple,
+              height: 350,
+            ),
+            Container(
+              color: Colors.blue,
+              height: 350,
+            ),
+            Container(
+              color: Colors.green,
+              height: 350,
             ),
           ],
         ),
